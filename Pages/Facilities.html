@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Facilities - Orchid Beach Resort</title>
+
+        <link rel="stylesheet" href="../Pages/CSS/FacilitiesStyle.css">
+
+        <script src="https://kit.fontawesome.com/94b26388aa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav id="firstpart">
+                <a href="Index.html"><img src="../Images/logo.png"></a>
+                <div class="main">
+                    <div class="links">
+                        <div class="log">
+                            <ul>
+                                <li><a href="../Pages/logIn.html">LogIn</a></a></li>
+                                <li><a href="../Pages/SignUp.html">SignUp</a></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><a href="../Index.html">HOME</a></li>
+                            <li><a href="../Pages/Accommodations.html">ACCOMMODATIONS</a></li>
+                            <li><a href="#" class="active">FACILITIES</a></li>
+                            <li><a href="../Pages/Gallery.html">GALLERY</a></li>
+                            <li><a href="../Pages/Contact.html">CONTACT</a></li>                        
+                        </ul>
+
+
+                        <script type="text/javascript">
+                            navbar = document.querySelector(".links").querySelectorAll("a");
+                            console.log(navbar);
+
+                            navbar.forEach(element => {
+                                element.addEventListener("click", function(){
+                                    navbar.forEach(nav=>nav.classList.remove("active"))
+
+                                    this.classList.add("active");
+                                })
+                                
+                            });
+                        </script>
+                    </div>
+                </div>
+            </nav>
+           
+            <div class="text-box">
+                <h1>ORCHID BEACH RESTAURANT & BAR</h1>
+                <h2>(In Room Dinning 24 Hours)</h2>
+                <p>Restaurants & Bar at Orchid turns up the heat on culinary glamour. Dine, drink and chill at our fabulous dining destinations, all overseen by our team of culinary expert lead by internationally experienced Chef & his team. Savor creative cocktails and delectable dishes at our four can’t-miss Orchid restaurants – Casablanca Restaurant, Surfside Café, YuMe Infinity Pool Café and Sunset Bar & Grill.
+                    Along with the sublime food, you can sip cocktails by the sea in one of the best seaside bar Wuxi at Sunset Bar & Grill. You have a choice of sitting by the extended deck overlooking the ocean and sea beach or sit inside a cozy atmosphere listening to live music. If you are in the mood of letting yourself lose on the dance floor then you must visit and dance to the DJ’s beat at Carnival Lounge.</p><br><br>
+               
+            </div>        
+ 
+        
+        </section>
+
+        <section class="accom">
+            <div class="deluxe">
+                <div class="king">
+                    <h2>Casablanca Restaurant</h2>
+                    <img src="../Images/rest10.jpg">
+                    <p><i class="far fa-clock"></i> 07.30am -10.00pm</p>
+                </div>
+
+                <div class="king">
+                    <h2>Surf Side Cafe</h2>
+                    <img src="../Images/rest11.jpg">
+                    <p><i class="far fa-clock"></i> 24/7 Open for all</p>
+                </div>
+                
+
+            </div>
+            <div class="infinity">
+                <div class="infi">
+                    <h2>Sunset Bar & Grill</h2>
+                    <img src="../Images/bar1.jpg">
+                    <p><i class="far fa-clock"></i> 11.00am - 11.00pm</p>
+                </div>
+
+                <div class="infi">
+                    <h2>YuMe Infinity Pool</h2>
+                    <img src="../Images/pool.jpg">
+                    <p><i class="far fa-clock"></i> 09.00am - 11.00pm</p>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="table">
+
+            <h2>Capacity Table</h2>
+
+            <div class="table-chart">
+
+                <table class="list">
+                    <tr>
+                        <th>VENUE</th>
+                        <th>COCKTAIL RECEPTION</th>
+                        <th>CLASSROOM</th>
+                        <th>THEATER</th>
+                        <th>U-SHAPE</th>
+                        <th>ROUND TABLE</th>
+                        <th>AREA(SQ.FT)</th>
+                        <th>CEILING HEIGHT</th>
+                    </tr>
+                    <tr>
+                        <td class="td">Casablanca Restarurant</td>
+                        <td>600</td>
+                        <td>120</td>
+                        <td>500</td>
+                        <td>80</td>
+                        <td>150</td>
+                        <td>4338</td>
+                        <td>21.00ft</td>
+                    </tr>
+                    <tr>
+                        <td class="td">Surfe Side Cafe</td>
+                        <td>250</td>
+                        <td>3000</td>
+                        <td>150</td>
+                        <td>50</td>
+                        <td>80</td>
+                        <td>2500</td>
+                        <td>9.00ft</td>
+                    </tr>
+                    <tr>
+                        <td class="td">Sunset Bar & Grill</td>
+                        <td>750</td>
+                        <td>3500</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>120</td>
+                        <td>5000</td>
+                        <td>15.00ft</td>
+                    </tr>
+                    <tr>
+                        <td class="td">YuMe Infinity Pool</td>
+                        <td>4000</td>
+                        <td>50</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>4500</td>
+                        <td>10.00ft</td>
+                    </tr>                    
+                </table>
+
+            </div>
+
+        </section>
+
+        <section class="footerlast">
+            <div class="footer">
+                <div class="about">
+                    <h3>About Us</h3>
+                    <p>This is our official website. We are committed to provide best services.</p>
+                </div>
+                <div class="add">
+                    <h2>Orchid Beach Resort</h2>
+                    <p>Road No 333, Xishan Avenue</p>
+                    <p>Wuxi City, Jiangsu Province, China</p>
+                    <P>WeChat: nahid_4801, +8618914113676</P>
+                </div>
+
+
+            </div>
+            <div class="icons">
+                <h2>JOIN US</h2>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                
+
+            </div>
+            <div class="rights">
+                <p><i class="fas fa-copyright"></i>2021. Orchid Beach Resort. All rights reserved.</p>
+            </div>
+
+        <div class="create">
+            <p>Created by N@HIDUL ISLAM</p>
+            <P>Department of CST-19</P>
+            <p>Wuxi University</p>
+        </div>
+        </section>
+
+    </body>
+</html>

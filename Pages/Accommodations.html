@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Accommodations - Orchid Beach Resort</title>
+
+        <link rel="stylesheet" href="../Pages/CSS/AccommoStyle.css">
+
+
+        <script src="https://kit.fontawesome.com/94b26388aa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav id="firstpart">
+                <a href="Index.html"><img src="../Images/logo.png"></a>
+                <div class="main">
+                    <div class="links">
+                        <div class="log">
+                            <ul>
+                                <li><a href="../Pages/logIn.html">LogIn</a></a></li>
+                                <li><a href="../Pages/SignUp.html">SignUp</a></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><a href="../Index.html">HOME</a></li>
+                            <li><a href="#" class="active">ACCOMMODATIONS</a></li>
+                            <li><a href="../Pages/Facilities.html">FACILITIES</a></li>
+                            <li><a href="../Pages/Gallery.html">GALLERY</a></li>
+                            <li><a href="../Pages/Contact.html">CONTACT</a></li>                        
+                        </ul>
+
+                        <script type="text/javascript">
+                            navbar = document.querySelector(".links").querySelectorAll("a");
+                            console.log(navbar);
+
+                            navbar.forEach(element => {
+                                element.addEventListener("click", function(){
+                                    navbar.forEach(nav=>nav.classList.remove("active"))
+
+                                    this.classList.add("active");
+                                })
+                                
+                            });
+                        </script>
+                    </div>
+                </div>
+            </nav>
+            <div class="slidercontainer">  
+                <div class="showSlide fade">  
+                    <img src="../Images/hotel1.jpg" />  
+                    <div class="content">Orchid Beach Resort</div>  
+                </div>  
+                <div class="showSlide fade">  
+                    <img src="../Images/lobby.jpg" />  
+                    <div class="content">Hotel's Loby</div>  
+                </div>  
+          
+                <div class="showSlide fade">  
+                    <img src="../Images/hotel3.jpg" />  
+                    <div class="content">Orchid Hotel</div>  
+                </div>  
+                <div class="showSlide fade">  
+                    <img src="../Images/lobby2.jpg" />  
+                    <div class="content">Beautiful Loby</div>  
+                </div>  
+                <!-- Navigation arrows -->  
+                <a class="left" onclick="nextSlide(-1)">❮</a>  
+                <a class="right" onclick="nextSlide(1)">❯</a>  
+            </div>
+           
+            <div class="text-box">
+                <h1>ORCHID BEACH RESORT</h1>
+                <h2>Wuxi's Best Ocean Front Living</h2>
+                <p>Orchid Beach Resort features 245 beautifully designed rooms and suites with gorgeous ocean view.
+                     Choose your ocean view from three spectacular options: Two Bedroom Panorama Ocean Suite, Infinity 
+                     Sea View and Ocean view Junior Suite. They are all beautifully appointed with modern furniture, central air 
+                     conditioning, hot water, flat screen TV, High Speed Internet. Bathrooms are elegantly appointed with luxury 
+                      fittings. Large covered balconies offer panoramic views of the Bay of Bengal and the meandering hills.</p><br><br>
+               
+            </div>        
+ 
+        
+        </section>
+
+        <section class="accom">
+            <div class="deluxe">
+                <div class="king">
+                    <h2>Super Deluxe Twin</h2>
+                    <img src="../Images/room8.jpg"><br>
+                    <p>RACK RATE RMB 10000 USD 500</p>
+                </div>
+
+                <div class="king">
+                    <h2>Super Deluxe King</h2>
+                    <img src="../Images/room7.jpg"><br>
+                    <p>RACK RATE RMB 10000 USD 500</p>
+                </div>
+                
+
+            </div>
+            <div class="infinity">
+                <div class="infi">
+                    <h2>Infinity Sea View</h2>
+                    <img src="../Images/room6.jpg"><br>
+                    <p>RACK RATE RMB 15000 USD 750</p>
+                </div>
+
+                <div class="infi">
+                    <h2>Junior Suite</h2>
+                    <img src="../Images/suite1.jpg"><br>
+                    <p>RACK RATE RMB 16000 USD 999</p>
+                </div>
+
+            </div>
+            <div class="suite">
+                <div class="suite-col">
+                    <h2>Panorama Ocean Suite</h2>
+                    <img src="../Images/suite2.jpg"><br>
+                    <p>RACK RATE RMB 20000 USD 1499</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="footerlast">
+            <div class="footer">
+                <div class="about">
+                    <h3>About Us</h3>
+                    <p>This is our official website. We are committed to provide best services.</p>
+                </div>
+                <div class="add">
+                    <h2>Orchid Beach Resort</h2>
+                    <p>Road No 333, Xishan Avenue</p>
+                    <p>Wuxi City, Jiangsu Province, China</p>
+                    <P>WeChat: nahid_4801, +8618914113676</P>
+                </div>
+
+
+            </div>
+            <div class="icons">
+                <h2>JION US</h2>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                
+
+            </div>
+            <div class="rights">
+                <p><i class="fas fa-copyright"></i>2021. Orchid Beach Resort. All rights reserved.</p>
+            </div>
+
+        <div class="create">
+            <p>Created by N@HIDUL ISLAM</p>
+            <P>Department of CST-19</P>
+            <p>Wuxi University</p>
+        </div>
+        </section>
+
+        <script src="accommodation.js"></script>
+
+    </body>
+</html>

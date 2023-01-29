@@ -1,0 +1,166 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <style type="text/css">
+        body{  
+            margin: 0;  
+            padding: 0;  
+            background-image: url(../Images/nahid.jpeg);
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1537px 885px;
+            font-family: 'Times New Roman', Times, serif;  
+        }  
+        .login{  
+                width: 350px;  
+                overflow: hidden;  
+                margin: auto;  
+                margin: 80px 0 0 520px;  
+                padding-left: 60px; 
+                padding-top: 10px; 
+                padding-bottom: 50px;
+                padding-right: 50px;
+                background: rgb(158, 146, 233);  
+                border-radius: 15px ; 
+                
+                
+        }  
+        h2{  
+            text-align: center;  
+            color:blue;  
+            position: relative;
+            padding-top: 0px;
+             
+        }  
+        label{  
+            color: black;  
+            font-size: 18px;  
+        }  
+        #Uname{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 3px;  
+            padding-left: 8px;  
+            border: 1px solid red;
+        }  
+
+       .hidden{
+           display: none;
+       }
+
+        .error-hint{
+            color: red;
+        }
+
+
+        #Pass{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 3px;  
+            padding-left: 8px; 
+            border: 1px solid red; 
+            
+        }  
+        #log{  
+            width: 200px;  
+            height: 40px;  
+            border: none;  
+            border-radius: 17px;  
+            padding-left: 10    px;  
+            color:green;  
+            cursor: pointer;
+            position: relative;
+            left: 50px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            transition: 0.5s ease;
+        
+        
+        }  
+
+        #log:hover{
+            background-color: red;
+            color: green;
+        }
+        span{  
+            color: black;  
+            font-size: 17px;  
+        }  
+        a{  
+            float: right;  
+            background-color: grey;  
+        }
+
+        #check{
+            cursor: pointer;
+            
+        }
+
+        p{
+            font-size: 20px;
+        }
+        
+        p a{
+            border: 1px solid blanchedalmond ;
+            transition: 0.5s ease;
+        }
+        p a:hover{
+            color: blanchedalmond;
+            background-color: red;
+        }
+
+        #error-hint{
+            color: green;
+        }
+    </style>  
+</head>    
+<body>    
+        
+    <div class="login">  
+          
+        <form id="login">   
+            <h2>Login Page</h2><br> 
+            <label><b>E-mail/Phone no:</b> </label> <br>   
+            <input type="text" name="Uname" id="Uname" placeholder="Type phone/email...">   
+            <br><br>    
+            <label><b>Password:</b></label>  <br>  
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+            <br><br><br>    
+            <input type="button" name="log" id="log" value="LogIn" onclick="validForm()">       
+            <br><br><br>
+            <input type="checkbox" id="check"><span>Remember me</span>    
+            <br><br>  
+            <p>Forgot: <a href="#">Password</a></p>  
+            <p id="error-hint"></p>  
+        </form>     
+    </div> 
+    
+    <script type="text/javascript">
+    function validForm(){
+        
+        var name =document.getElementById('Uname').value;
+        
+        var password = document.getElementById('Pass').value;
+        
+
+        if (name==null||name==""){
+            alert("Input phone/E-mail");
+            return false;
+        }else if(password.length<8){
+            alert("Password must be atleast 8 characters");
+            return false;
+        }
+    }
+   
+    
+     
+
+
+    </script>
+</body>    
+</html> 

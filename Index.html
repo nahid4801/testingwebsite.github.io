@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Welcome to Orchid Beach Resort</title>
+
+        <link rel="stylesheet" href="Style.css">
+
+        <script src="https://kit.fontawesome.com/94b26388aa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--This is navigation bar-->
+
+        <section class="header">
+            <nav id="firstpart">
+                <a href="Index.html"><img src="Images/logo.png"></a>
+                <div class="main">
+                    <div class="links">
+                        <div class="log">
+                            <ul>
+                                <li><a href="Pages/logIn.html">LogIn</a></a></li>
+                                <li><a href="Pages/SignUp.html">SignUp</a></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><a href="#"  class="active">HOME</a></li>
+                            <li><a href="Pages\Accommodations.html">ACCOMMODATIONS</a></li>
+                            <li><a href="Pages/Facilities.html">FACILITIES</a></li>
+                            <li><a href="Pages/Gallery.html">GALLERY</a></li>
+                            <li><a href="Pages/Contact.html">CONTACT</a></li>                        
+                        </ul>
+
+                        <!--Scrript for opened page-->
+                        
+                        <script type="text/javascript">
+                            navbar = document.querySelector(".links").querySelectorAll("a");
+                            console.log(navbar);
+
+                            navbar.forEach(element => {
+                                element.addEventListener("click", function(){
+                                    navbar.forEach(nav=>nav.classList.remove("active"))
+
+                                    this.classList.add("active");
+                                })
+                                
+                            });
+                        </script>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Text in side picture-->
+           
+            <div class="text-box">
+                <h1>ORCHID BEACH RESORT</h1>
+                <p>An ode to luxury of unforgettable memories</p><br><br>
+                <a href="#" class="text-btn" onclick="btn()">To visit more</a>
+            </div>        
+ 
+        
+        </section>
+        <section class="greet">  
+            <div class="greeting">      
+                <h1>Welcome to</h1>
+                <h2>Orchid Beach Resort</h2><br>
+                <p>Orchid Beach Resort revives its famed legacy of comfort, elegance and impeccable service. An eminent landmark 
+                    constructed in 2021, this legendary first private hotel of Cox’s Bazar is reborn, infusing modern sophistication into this vintage-chic, iconic 
+                    hotel at a new beachfront location of 333 Xishan Avenue, Wuxi, Jiangsu, China.  <br><br>With its richly historic
+                    past, the Hotel Sayeman now fully becomes a part of the exciting and rapidly changing present with the
+                    addition of a modern, elegant luxury ocean front hotel. The beauty of Wuxi – the climate, 
+                    the panoramic ocean views, the sandy beaches, plus the rich culture and history along with the warmth of 
+                    the sun – is what attracts people here. And the Sayeman Beach Resort provides you exactly just that with e
+                    xtraordinary comfort, luxury and services.
+                </p>
+            </div>  
+
+            <!--Viedo-->
+           
+            <div class="vid">
+                <video controls>
+                    <source src="Videos/vodeo1.mp4" type="video/mp4">
+                </video>
+
+                <!--Some facilites-->
+
+                <div class="shortcut">
+                    <h2>Resort Surprises</h2><br><br>
+                    <ul>
+                        <li>Infinite Pool</li><br><br>
+                        <li>The Beach</li><br><br>
+                        <li>Beach Surprise</li><br><br>
+                        <li>Beach Activities</li>
+                    </ul>
+                </div>
+            </div>    
+            
+        </section>  
+
+
+        <!--Rooms section-->
+
+
+        <section class="luxroom" >
+            <div class="rooms">      
+                <h1>Rooms</h1>  <br>              
+                <p>Orchid Beach Resort is Cox’s Bazar’s best oceanfront living modern and tropical accents. 
+                    Comfortable bed with luxury linens, elegantly-detailed bathroom furnishings, settle in unwind 
+                    indulge yourself with the luxury and scenic view from your room.
+                </p>
+            </div>
+            <div class="room-row">
+                <div class="room-col">
+                    <img src="Images/room1.jpg">
+                    <h1>Junior Suite</h1>
+                </div>
+                <div class="room-col">
+                    <img src="Images/room2.jpg">
+                    <h1>Super Deluxe King</h1>
+                </div>
+
+            </div>
+
+            
+
+        </section> 
+
+        <!--Services section-->
+        
+        
+        <section class="service">
+                 
+                <h1>Facilities that <span>ORCHID RESORT</span> provide</h1>  <br>              
+                <p>Orchid Beach Resort lets you enjoy breathtaking ocean view, beaches, surfing & water sports, 
+                    Thai spa, fabulous dining, and exceptional event venue. There’s so much to discover and it’s all steps away.
+                </p>
+                <div class="service-row">
+                    <div class="service-col">
+                        <img src="Images/pool.jpg">
+                        <h1>The Infinite Pool</h1>
+                    </div>
+                    <div class="service-col">
+                        <img src="Images/restaurant.jpg">
+                        <h1>Casablanca Restaurant</h1>
+                    </div>
+                    <div class="service-col">
+                        <img src="Images/hall1.jpg">
+                        <h1>Marina Hall</h1>
+                    </div><div class="service-col">
+                        <img src="Images/spa1.jpg">
+                        <h1>Tararoma Spa</h1>
+                    </div>
+
+
+                </div>
+
+                <!--Our services-->
+
+                <div id="simple">
+                    <ol>
+                        <li>Kayak<i class="fas fa-umbrella-beach"></i></li>
+                        <li>Surf Board <i class="fas fa-snowboarding"></i></li>
+                        <li>Beach Bike <i class="fas fa-biking"></i></li>
+                        <li>Beautiful Beach View <i class="fas fa-water"></i></li>
+                    </ol>
+
+                </div>
+                <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34619.602006960515!2d120.44895625697788!3d31.57812482829377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b395f51e9b21f5%3A0x40abed0c26e46e62!2sBinjiang%20College%20of%20Nanjing%20University%20of%20Information%20Science%20and%20Technology!5e1!3m2!1sen!2skr!4v1622752410732!5m2!1sen!2skr" width="710" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                
+
+        </section>  
+
+        <!--Here is foooter-->
+        
+        <section class="footer-last">
+            <div class="footer">
+                <div class="about">
+                    <h2>About Us</h2>
+                    <p>We have over thirty years combined experience with specialists in food and beverage, entertainment and hospitality.
+                        We stand out from the crowd thanks to our killer account management team. Which never leaves yiu wondering about the status
+                        of your project or worrying about when we're going to respond to your emails. We provide best facilities in the world.
+                    </p>
+                </div>
+                <div class="add">
+                    <h2>Orchid Beach Resort</h2>
+                    <p>Road No 333, Xishan Avenue</p>
+                    <p>Wuxi City, Jiangsu Province, China</p>
+                    <P>WeChat: nahid_4801, +8618914113676</P>
+                </div>
+
+
+            </div>
+            <div class="icons">
+                <h2>JOIN US</h2>
+                <a href="https://www.facebook.com/giant4801" target="_blank"> <i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCGBNqmLq84-5KqDoOawL5lw/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/nahid.4801" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nahid2014" target="_blank"><i class="fab fa-linkedin"></i></a>
+                
+                
+
+            </div>
+            <div class="rights">
+                <p><i class="fas fa-copyright"></i>2021. Orchid Beach Resort. All rights reserved.</p>
+            </div>
+
+        <div class="create">
+            <p>Created by N@HIDUL ISLAM</p>
+            <P>Department of CST-19</P>
+            <p>Wuxi University</p>
+        </div>
+        </section>
+
+        <!--Script about button click upper side of home page-->
+
+        <script type="text/javascript">
+
+        function btn(){
+            alert("This is under maintance. Thank you.");
+        }
+
+    
+
+        </script>
+
+
+
+
+
+    </body>
+</html>
